@@ -57,7 +57,7 @@ jobs:
         run: | 
           docker build -t ${{ secrets.ARTIFACT_REGISTRY }}/myapp:latest .
           docker push ${{ secrets.ARTIFACT_REGISTRY }}/myapp:latest
-  Deploy:
+  DeployHom:
     needs: Build
     runs-on: ubuntu-latest
 
